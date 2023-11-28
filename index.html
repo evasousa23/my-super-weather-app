@@ -3,23 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="src/style.css">  <title>weather APP</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>weather APP</title>
   </head>
   <body>
-    <div>
-        <header>
-      <input type="search" placeholder="📌Enter a city..." required />
-      <input type="submit" value="search" />
-</header>
+    <div class="weather-app">
+      <form class="search-form">
+        <input
+          type="search"
+          placeholder="📌Enter a city..."
+          required
+          class="write-button"
+        />
+        <input type="submit" value="search" class="search-botton" />
+      </form>
       <div>29°C</div>
       <div>
-        humudity: <strong>33%</strong>
-        <span>wind: <strong>3.3 </strong>km/h</span>
+        Humudity: <strong>33%</strong>
+        <span>Wind: <strong>3.3 </strong>km/h</span>
       </div>
       <div>City, <span>Country</span></div>
       <div>Day, <span>hour</span></div>
     </div>
-  
+    <br />
+    <div class="weather-forecast">
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Monday</div>
+        <img src="#" alt="#" />
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">8 º</div>
+          <div class="weather-forecast-temperature">4º</div>
+        </div>
+      </div>
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Monday</div>
+        <img src="#" alt="#" />
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">8 º</div>
+          <div class="weather-forecast-temperature">4º</div>
+        </div>
+      </div>
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Monday</div>
+        <img src="#" alt="#" />
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">8 º</div>
+          <div class="weather-forecast-temperature">4º</div>
+        </div>
+      </div>
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Monday</div>
+        <img src="#" alt="#" />
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">8 º</div>
+          <div class="weather-forecast-temperature">4º</div>
+        </div>
+      </div>
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Monday</div>
+        <img src="#" alt="#" />
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">8 º</div>
+          <div class="weather-forecast-temperature">4º</div>
+        </div>
+      </div>
+    </div>
+    <br />
     <footer>
       This project was coded by <a href="#" target="_blank">Eva Sousa</a> is
       open-sourced on <a href="#" target="_blank">Github</a> and hosted on

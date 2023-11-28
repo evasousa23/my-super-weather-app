@@ -1,0 +1,15 @@
+body {
+  background: #e7eaf6;
+  font-family: "Rubik", sans-serif;
+}
+
+.weather-app {
+  background-color: aliceblue;
+}
+
+.search-button {
+}
+
+.weather-forecast {
+  display: flex;
+}
