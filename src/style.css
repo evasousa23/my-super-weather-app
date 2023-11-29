@@ -10,6 +10,10 @@ header {
 footer {
   padding: 4px 0 0 0;
   font-size: 9px;
+  color: rgba(82, 73, 122, 0.4);
+}
+a {
+  color: rgb(228, 138, 187);
 }
 
 .weather-app {
@@ -19,6 +23,8 @@ footer {
   padding: 30px;
   border-radius: 14px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  line-height: 1.5;
+  justify-content: space-around;
 }
 
 .write-button {
@@ -58,5 +64,14 @@ footer {
 
 .weather-forecast {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
