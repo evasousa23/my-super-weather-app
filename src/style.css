@@ -1,5 +1,5 @@
 body {
-  background: #cca8e9;
+  background: #f4ecfa;
   font-family: "Rubik", sans-serif;
 }
 header {
@@ -19,7 +19,9 @@ a {
 main {
   padding: 30px 0;
 }
-
+strong {
+  color: #f65282;
+}
 .weather-app {
   background-color: white;
   margin: 45px auto;
@@ -70,7 +72,11 @@ main {
   text-align: center;
 }
 
-
+.city-country,
+.day-hour {
+  display: flex;
+  justify-content: center;
+}
 
 .weather-forecast {
   display: flex;
