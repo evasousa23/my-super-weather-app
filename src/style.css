@@ -55,10 +55,9 @@ strong {
 }
 
 .weather-image {
-  display: block;
-  margin: 0 auto;
-  max-width: 50%;
-  justify-content: center;
+  margin: -10px auto;
+  max-width: 22%;
+  height: auto;
 }
 
 .weather-app-temperature-container {
