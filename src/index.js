@@ -8,7 +8,11 @@ function updateWeatherData(response) {
   let windElement = document.querySelector("#wind");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
+
+
+iconElement.innerHTML = `<img src="${ response.data.condition.icon_url}" >`; 
   cityElement.innerHTML = response.data.city;
   countryElement.innerHTML = response.data.country;
   temperatureElement.innerHTML = Math.round(temperature);
@@ -37,7 +41,7 @@ function formatDate(date) {
   if (hours < 10) {
     hours = "0" + hours;
   }
-  return `${day} , ${hours}:${minutes}`
+  return `${day} , ${hours}:${minutes}`;
 }
 console.log(formatDate);
 function searchCity(city) {
@@ -55,3 +59,5 @@ function searchFormInput(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchFormInput);
+
+searchCity("Porto");
