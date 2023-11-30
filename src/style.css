@@ -1,7 +1,6 @@
 body {
   background: #cca8e9;
   font-family: "Rubik", sans-serif;
-  
 }
 header {
   border-bottom: 1px solid #f9f7fe;
@@ -57,10 +56,12 @@ main {
   display: block;
   margin: 0 auto;
   max-width: 50%;
+  justify-content: center;
 }
 
-.current-weather {
-  text-align: center;
+.weather-app-temperature-container {
+  display: flex;
+  justify-content: center;
   font-weight: 600;
   font-size: 31px;
 }
@@ -68,8 +69,6 @@ main {
 .extra-info {
   text-align: center;
 }
-
-
 
 .weather-forecast {
   display: flex;
