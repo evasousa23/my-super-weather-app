@@ -92,10 +92,10 @@ main {
 }
 
 .weather-forecast-icon {
-  width: 35px;
-  height: 42px;
-  display: block;
-  margin: 0px auto;
+width: 88px;
+height: 88px;
+display: block;
+margin: 0 auto; 
 }
 
 .weather-forecast-temperatures {
