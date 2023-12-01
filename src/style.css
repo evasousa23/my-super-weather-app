@@ -1,5 +1,5 @@
 body {
-  background: #f4ecfa;
+  background: #200633;
   font-family: "Rubik", sans-serif;
 }
 header {
@@ -19,8 +19,7 @@ a {
 main {
   padding: 30px 0;
 }
-strong {
-  color: #f65282;
+
 .weather-app {
   background-color: white;
   margin: 45px auto;
@@ -44,7 +43,7 @@ strong {
 }
 
 .search-botton {
-  background: #d268fe;
+  background: #110018;
   padding: 12px 28px;
   border: none;
   font-size: 10px;
@@ -69,7 +68,9 @@ strong {
 .extra-info {
   text-align: center;
 }
-
+.humidity-wind {
+  color: #f65282;
+}
 .city-country,
 .day-hour {
   display: flex;
@@ -99,7 +100,6 @@ strong {
 
 .weather-forecast-temperatures {
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -107,4 +107,7 @@ strong {
 
 .weather-forecast-temperature {
   padding: 0 10px;
+}
+.weather-forecast-temperature-min {
+  color: rgba(39, 33, 66, 0.4);
 }
