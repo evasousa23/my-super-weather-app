@@ -10,7 +10,6 @@ function updateWeatherData(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
-
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" >`;
   temperatureElement.innerHTML = Math.round(temperature);
   descriptionElement.innerHTML = response.data.condition.description;
@@ -59,4 +58,30 @@ function searchFormInput(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchFormInput);
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+
+   <div class="weather-forecast-day">
+     <div class="weather-forecast-date">${day}</div>
+     <div class="weather-forecast-icon">🌦️</div>
+     <div class="weather-forecast-temperatures">
+       <div class="weather-forecast-temperature-max">
+         <strong>8º</strong>
+       </div>
+       <div class="weather-forecast-temperature-min">4º</div>
+     </div>
+     </div>
+`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
 searchCity("Porto");
+displayForecast();
