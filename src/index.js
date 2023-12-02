@@ -66,7 +66,6 @@ function formatDay(timestamp) {
   let currentDate = new Date(timestamp * 1000);
   let dayFollowing = new Date(currentDate.getTime() + 24 * 60 * 60 * 1000);
 
-
   return days[dayFollowing.getDay()];
   
 }
